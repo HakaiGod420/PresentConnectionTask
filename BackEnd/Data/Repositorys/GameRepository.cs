@@ -47,7 +47,7 @@ namespace BackEnd.Data.Repositorys
         {
             Game? game = null;
 
-            await using (var connection = new SqliteConnection("Data Source=../mysql.db"))
+            await using (var connection = new SqliteConnection("Data Source=./mysql.db"))
             {
                 connection.Open();
 
@@ -76,7 +76,7 @@ namespace BackEnd.Data.Repositorys
 
         public async Task<Game> Post(Game game)
         {
-            await using (var connection = new SqliteConnection("Data Source=../mysql.db"))
+            await using (var connection = new SqliteConnection("Data Source=./mysql.db"))
             {
                 connection.Open();
 
