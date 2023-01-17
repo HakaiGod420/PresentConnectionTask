@@ -16,7 +16,7 @@ namespace BackEnd.Data.Repositorys
         {
             List<Game> games = new List<Game>();
 
-            await using (var connection = new SqliteConnection("Data Source=../mysql.db"))
+            await using (var connection = new SqliteConnection("Data Source=./mysql.db"))
             {
                 connection.Open();
 
